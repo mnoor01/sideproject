@@ -62,6 +62,7 @@ public class ExamViewHolder extends ViewHolder {
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 Bundle bundle = new Bundle();
                 bundle.putString("pokename",model.getName());
+                bundle.putInt("numb",getIdFromURL(model.getUrl()));
                 PokeModel model = new PokeModel();
                 Gson gson= new Gson();
 
